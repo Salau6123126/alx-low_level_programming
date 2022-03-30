@@ -10,7 +10,7 @@ int add(int a, int b)
 {
 	int n;
 
-	n = a + b
-	printf("%d\n", n);
-	return n
+	n = a + b;
+	printf("%d", n);
+	return n;
 }
