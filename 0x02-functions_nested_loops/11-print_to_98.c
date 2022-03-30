@@ -4,6 +4,7 @@
 /**
  * print_to_98 - Prints all natural numbers from n to 98
  * @n - the first term
+ * 'n': number
  * Return: Always (0)
  */
 void print_to_98(int n)
@@ -12,7 +13,7 @@ void print_to_98(int n)
 
 	for (i = n; i < 99; i++)
 	{
-		printf("%d", n);
+		printf("%d", i);
 		putchar(',');
 	}
 	putchar('\n');
