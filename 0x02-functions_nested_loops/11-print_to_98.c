@@ -15,7 +15,7 @@ void print_to_98(int n)
 		printf("%d", n);
 		putchar(',');
 	}
-	purchar('\n');
+	putchar('\n');
 
-	return (98);
+	return (0);
 }
