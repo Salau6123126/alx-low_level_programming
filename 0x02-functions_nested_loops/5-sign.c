@@ -5,7 +5,7 @@
  * @n: number to be processed
  * Return: 0
  */
-int print_sign(int n)
+int print_sign(int n, void)
 {
 	if (n > 0)
 	{
