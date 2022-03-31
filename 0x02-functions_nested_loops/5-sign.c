@@ -5,24 +5,28 @@
  * @n: number to be processed
  * Return: 0
  */
-int print_sign(int n, void)
+int print_sign(int n)
 {
+	int r
+
 	if (n > 0)
 	{
 		putchar('+');
 
-		return (1);
+		r = 1;
 	}
 	else if (n == 0)
 	{
 		putchar('0');
 
-		return (0);
+		r = 0;
 	}
 	else if (n < 0)
 	{
 		putchar('-');
 
-		return (-1);
+		r = -1;
 	}
+
+	return (r);
 }
