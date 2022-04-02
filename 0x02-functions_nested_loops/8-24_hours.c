@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* 8-24_hours - prints a 24 hour timer
+* jack_bauer - prints a 24 hour timer
 * Description: prints every minute
 */
-void 8-24_hours(void)
+void jack_bauer(void)
 {
 	int time;
 	int x;
