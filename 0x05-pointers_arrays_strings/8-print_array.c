@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  *powB - raises the number base to power power
@@ -53,33 +54,33 @@ void putnchar(int num)
 
 	if (num < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		num = -1 * num;
 	}
 	if (num == 0)
-		_putchar(48);
+		putchar(48);
 	else
 	{
 		while (j >= 0)
 		{
 			if (num % powB(10, j) == 0 && j != 0)
 			{
-				_putchar(48 + num / powB(10, j));
+				putchar(48 + num / powB(10, j));
 				for (k = j; k > 0 ; k--)
 				{
-					_putchar(48);
+					putchar(48);
 				}
 				j = -1;
 			}
 			else
 			{
 				digit1 = num / powB(10, j);
-				_putchar(digit1 + 48);
+				putchar(digit1 + 48);
 				tmp2 = num;
 				num -= powB(10, j) * digit1;
 				if (numLength(tmp2) - numLength(num) == 2)
 				{
-					_putchar(48);
+					putchar(48);
 					j--;
 				}
 				j--;
@@ -101,14 +102,14 @@ void print_array(int *a, int n)
 
 	while (x < n)
 	{
-		putnchar(a[x]);
+		putchar(a[x]);
 		if (x == n - 1)
 			break;
-		_putchar(',');
-		_putchar(' ');
+		putchar(',');
+		putchar(' ');
 		x++;
 	}
-	_putchar('\n');
+	putchar('\n');
 
 
 }
