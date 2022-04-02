@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen - returns the length of string
@@ -29,7 +30,7 @@ void puts2(char *str)
 	int size = _strlen(str);
 
 	for (x = 0; x < size; x += 2)
-		_putchar(*(str + x));
+		putchar(*(str + x));
 
-	_putchar('\n');
+	putchar('\n');
 }
