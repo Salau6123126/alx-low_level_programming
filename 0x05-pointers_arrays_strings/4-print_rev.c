@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strlen - returns the length of string
@@ -23,6 +24,6 @@ void print_rev(char *s)
 	int size = _strlen(s);
 
 	while (size--)
-		_putchar(*(s + size));
-	_putchar('\n');
+		putchar(*(s + size));
+	putchar('\n');
 }
