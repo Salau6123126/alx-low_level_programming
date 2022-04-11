@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	printf("The current file name is %s\n",  __FILE__);
+	printf("The current file name is %s\n",  __BASE_FILE__);
 
 	return (0);
 }
