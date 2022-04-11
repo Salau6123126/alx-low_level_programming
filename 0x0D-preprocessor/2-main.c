@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints name of file compiled from
@@ -9,5 +10,5 @@ int main(void)
 {
 	printf("The current file name is %s\n",  __FILE__);
 
-	/*return (0);*/
+	return (0);
 }
