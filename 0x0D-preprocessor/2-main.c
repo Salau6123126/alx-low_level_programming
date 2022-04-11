@@ -9,5 +9,5 @@ int main(void)
 {
 	printf("The current file name is %s\n",  __FILE__);
 
-	return (0);
+	/*return (0);*/
 }
